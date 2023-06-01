@@ -1,0 +1,50 @@
+body{
+    background-image: url(./images/146.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+.container{
+    width:100%;
+    margin-top: 20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.card{
+    width:30%;
+    background-color:green;
+    padding:5px;
+    text-align:center;
+    box-sizing:border-box;
+    border: 1px solid #555;
+    border-radius:3px;
+}
+.card img{
+    width:100%;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-delay: 1s;
+}
+.wrap:hover .circle{
+    transform: translateX(300px);
+}
+.circle:nth-child(1){
+    transition-timing-function: linear;
+}
+.circle:nth-child(2){
+    transition-timing-function: ease-out;
+}
+.circle:nth-child(3){
+    transition-timing-function: ease;
+}
+.circle:nth-child(4){
+    transition-timing-function: step-start
+}
